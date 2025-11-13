@@ -25,13 +25,13 @@ Bu repo, **veri görselleştirme** konusunu öğrenmek isteyenlere yönelik haz�
 ### Matplotlib
 - [05 — Matplotlib Temelleri](03-Matplotlib/05-Matplotlib-Basics.md)  
 (_Çizgi, çubuk, dağılım grafikleri; eksen ve etiket ayarları_)
-- [06 — Matplotlib İleri Seviye]()  
+- [06 — Matplotlib İleri Seviye]  
 (_Hazırlanıyor_)
 
 ### Seaborn
 - [07 — Seaborn Temelleri](04-Seaborn/07-Seaborn-Basics.md)  
 (_Histogram, boxplot, barplot ve tema/palette kullanımı_)
-- [08 — Seaborn İleri Seviye]()  
+- [08 — Seaborn İleri Seviye]  
 (_Hazırlanıyor_)
 
 ---
