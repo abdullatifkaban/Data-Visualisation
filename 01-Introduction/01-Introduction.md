@@ -68,7 +68,8 @@ Veri görselleştirmede estetik kadar **algısal doğruluk** da önemlidir. Tasa
 * Aşırı renk ve efekt kullanımı
 * Çok fazla bilgiyle kalabalıklaştırılmış grafikler
 
-![](01-03.png:100) ![](01-04.png) ![](01-05.png) ![](01-06.png)
+<img src="01-03.png" width="400"> <img src="01-04.png" width="400">
+<img src="01-05.png" width="400"> <img src="01-06.png" width="400">
 
 
 
