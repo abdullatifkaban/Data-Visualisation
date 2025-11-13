@@ -68,6 +68,10 @@ Veri görselleştirmede estetik kadar **algısal doğruluk** da önemlidir. Tasa
 * Aşırı renk ve efekt kullanımı
 * Çok fazla bilgiyle kalabalıklaştırılmış grafikler
 
+![](01-03.png:100) ![](01-04.png) ![](01-05.png) ![](01-06.png)
+
+
+
 ---
 
 ## 📈 Örnek Uygulama: Basit Karşılaştırma Grafiği
@@ -83,14 +87,14 @@ plt.title('Departman Bazlı Yıllık Harcama')
 plt.ylabel('Bin TL')
 plt.show()
 ```
-
+![](01-02.png)  
 Bu tür basit görselleştirmeler, bölümler arası farkları kolayca göstermeye yardımcı olur.
 
 ---
 
 ## 📚 Ek Kaynaklar
 
-* [Python Matplotlib Dokümantasyonu](https://matplotlib.org/stable/contents.html)
+* [Python Matplotlib Dokümantasyonu](https://matplotlib.org/stable/users/index.html)
 * [Seaborn Galerisi](https://seaborn.pydata.org/examples/index.html)
 
 ---
