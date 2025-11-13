@@ -37,7 +37,8 @@ Jupyter Notebook, kod, metin, denklem ve görselleştirmeleri aynı dosyada birl
 - **Code:** Python kodları yazmak için kullanılır.  
 - **Markdown:** Açıklama, başlık, formül yazmak için kullanılır.  
 
-> 💡 İpucu: Hücre çalıştırmak için `[Shift] + [Enter]` tuşlarını kullanın.
+> [!TIP]İpucu
+> Hücre çalıştırmak için `[Shift] + [Enter]` tuşlarını kullanın.
 
 ---
 
@@ -77,7 +78,7 @@ veri = pd.read_csv('ornek_veri.csv')
 # İlk 5 satırı görüntüleme
 veri.head()
 ```
-> [!NOTE]
+> [!IMPORTANT]Dikkat
 > Burada kullanılan `ornek_veri.csv` dosyası ile `Jupyter Notebook` dosyası aynı klasöründe yer almalıdır.
 
 ---

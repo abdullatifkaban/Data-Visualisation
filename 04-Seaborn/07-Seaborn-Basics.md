@@ -1,0 +1,156 @@
+# Seaborn ile Veri Görselleştirme
+
+Bu bölümde, Matplotlib üzerine inşa edilmiş gelişmiş bir kütüphane olan **Seaborn** tanıtılmaktadır.
+Seaborn, istatistiksel veri görselleştirme için tasarlanmış olup, grafiklerin daha estetik ve bilgilendirici hale gelmesini sağlar.
+
+---
+
+## 🎯 Öğrenme Hedefleri
+
+* Seaborn kütüphanesinin temel özelliklerini tanımak
+* Temel grafik türlerini (histogram, boxplot, scatter, barplot) oluşturmak
+* Veri setiyle doğrudan entegre çalışan fonksiyonları öğrenmek
+* Renk paletleri ve temalarla görselleştirmeyi özelleştirmek
+
+---
+
+## 📦 Seaborn Nedir?
+
+Seaborn, özellikle **pandas DataFrame** yapısıyla uyumlu çalışan, kolay ve estetik görselleştirmeler sunan bir kütüphanedir.
+Matplotlib’e kıyasla daha az kodla daha açıklayıcı grafikler üretir.
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
+---
+
+## 📊 Örnek Veri Seti
+
+Seaborn, kendi içinde kullanıma hazır veri setleriyle birlikte gelir.
+
+```python
+df = sns.load_dataset('tips')
+df.head()
+```
+| total_bill |   tip |    sex | smoker | day |  time  | size |
+|-----------:|------:|--------|--------|-----|--------|-----:|
+|      16.99 |  1.01 | Female | No     | Sun | Dinner |    2 |
+|      10.34 |  1.66 | Male   | No     | Sun | Dinner |    3 |
+|      21.01 |  3.50 | Male   | No     | Sun | Dinner |    3 |
+|      23.68 |  3.31 | Male   | No     | Sun | Dinner |    2 |
+|      24.59 |  3.61 | Female | No     | Sun | Dinner |    4 |
+
+Bu veri seti, bir restoranın bahşiş (tip) verilerini içerir.
+
+---
+
+## 📈 Dağılım Grafiği (Scatter Plot)
+
+```python
+sns.scatterplot(data=df, x='total_bill', y='tip', hue='sex', style='time')
+plt.title('Toplam Hesap ve Bahşiş İlişkisi')
+plt.show()
+```
+![](07-01.png)
+
+> [!TIP]İpucu
+> `hue` parametresi renkleri, `style` parametresi ise işaret tiplerini belirler.
+
+---
+
+## 📊 Kutu Grafiği (Box Plot)
+
+Kutu grafikleri, veri dağılımı, medyan, çeyrekler ve uç değerleri görselleştirir.
+
+```python
+sns.boxplot(data=df, x='day', y='total_bill', palette='Set2')
+plt.title('Günlere Göre Toplam Hesap Dağılımı')
+plt.show()
+```
+![](07-02.png)
+
+> [!TIP]İpucu
+> `palette` parametresiyle renk seti belirlenebilir (ör. `'Set1'`, `'coolwarm'`, `'viridis'`).
+
+---
+
+## 📉 Histogram ve Yoğunluk Grafiği
+
+```python
+sns.histplot(data=df, x='total_bill', kde=True, color='#4e79a7')
+plt.title('Toplam Hesap Dağılımı')
+plt.show()
+```
+![](07-03.png)
+
+> [!TIP]İpucu
+> `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
+
+---
+
+## 📊 Çubuk Grafiği (Bar Plot)
+
+```python
+sns.barplot(data=df, x='day', y='tip', estimator='mean', ci=None, palette='muted')
+plt.title('Günlere Göre Ortalama Bahşiş Miktarı')
+plt.show()
+```
+![](07-04.png)
+
+> [!TIP]İpucu
+> Varsayılan olarak ortalama (`mean`) değerleri gösterir; `estimator` parametresi ile değiştirilebilir (ör. `median`).
+
+---
+
+## 🎨 Renk Paletleri ve Temalar
+
+Seaborn, grafiklerin genel stilini belirlemek için birkaç tema sunar:
+
+```python
+sns.set_theme(style='whitegrid', palette='deep')
+```
+
+Diğer popüler temalar:
+
+* `'darkgrid'`
+* `'white'`
+* `'ticks'`
+
+> [!TIP]İpucu
+> Palet seçenekleri: `'pastel'`, `'muted'`, `'deep'`, `'coolwarm'`, `'rocket'`, `'mako'`.
+
+---
+
+## 📈 Çoklu Grafik (FacetGrid)
+
+Birden fazla alt grafiği kategori bazında oluşturmak için `FacetGrid` kullanılabilir.
+
+```python
+g = sns.FacetGrid(df, col='sex', row='time')
+g.map_dataframe(sns.scatterplot, x='total_bill', y='tip')
+g.add_legend()
+plt.show()
+```
+![](07-05.png)
+
+> [!TIP]İpucu
+> Bu yöntem, alt gruplar arasındaki görsel karşılaştırmaları kolaylaştırır.
+
+---
+
+## ⚠️ Dikkat Edilmesi Gerekenler
+
+* Renk seçimi ve kontrastı görsel algıyı doğrudan etkiler.
+* Fazla sayıda değişkeni aynı grafiğe eklemek, anlamı azaltabilir.
+* Temalar arası geçişte tutarlılık korunmalıdır.
+
+---
+
+## 📚 Ek Kaynaklar
+
+* [Seaborn Resmî Belgeleri](https://seaborn.pydata.org/)
+* [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
+* [Seaborn Palet Referansı](https://seaborn.pydata.org/tutorial/color_palettes.html)
