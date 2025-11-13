@@ -53,7 +53,7 @@ plt.title('Departman Bazlı Çalışan Sayısı')
 plt.ylabel('Kişi Sayısı')
 plt.show()
 ```
-
+![](02-01.png)  
 Bu görselleştirme, farklı bölümler arasındaki personel dağılımını doğrudan karşılaştırmayı kolaylaştırır.
 
 ---
@@ -73,7 +73,7 @@ plt.ylabel('Satış (bin adet)')
 plt.grid(True, linestyle='--', alpha=0.5)
 plt.show()
 ```
-
+![](02-02.png)  
 Zaman serisi grafiklerinde eğilimleri görmek, karar süreçlerinde önemli içgörüler sağlar.
 
 ---
@@ -85,7 +85,5 @@ Zaman serisi grafiklerinde eğilimleri görmek, karar süreçlerinde önemli iç
 - Aşırı renk kullanımı: Görsel karmaşa yaratmak
 - 3B etkiler: Oran farklarını yanıltıcı hale getirmek
 
-## 📚 Ek Okuma
-- Cole Nussbaumer Knaflic – Storytelling with Data
-- Alberto Cairo – The Truthful Art
-- Matplotlib Gallery
+## 📚 Ek Kaynak
+- [Matplotlib Grafik Gallerisi](https://matplotlib.org/stable/gallery/index.html)
