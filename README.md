@@ -25,18 +25,14 @@ Bu repo, **veri görselleştirme** konusunu öğrenmek isteyenlere yönelik haz�
 ### Matplotlib
 - [05 — Matplotlib Temelleri](03-Matplotlib/05-Matplotlib-Basics.md)  
 (_Çizgi, çubuk, dağılım grafikleri; eksen ve etiket ayarları_)
-- [06 — Matplotlib İleri Seviye](03-Matplotlib/06-Matplotlib-Advanced.md)  
-(_Subplot düzenleri, annotation, renk paletleri ve stiller_)
+- [06 — Matplotlib İleri Seviye]()  
+(_Hazırlanıyor_)
 
 ### Seaborn
 - [07 — Seaborn Temelleri](04-Seaborn/07-Seaborn-Basics.md)  
 (_Histogram, boxplot, barplot ve tema/palette kullanımı_)
-- [08 — Seaborn İleri Seviye](04-Seaborn/08-Seaborn-Advanced.md)  
-(_Pairplot, jointplot, heatmap ve FacetGrid örnekleri_)
-
-### İleri Görselleştirmeler
-- [09 — Zaman Serisi Görselleştirme](05-Advanced-Visualization/09-Time-Series-Visualization.md)  
-(_Zaman serisi grafikleri, hareketli ortalama, animasyon örnekleri_)
+- [08 — Seaborn İleri Seviye]()  
+(_Hazırlanıyor_)
 
 ---
 
