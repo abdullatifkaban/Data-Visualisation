@@ -55,7 +55,7 @@ plt.title('Toplam Hesap ve Bahşiş İlişkisi')
 ```
 ![](07-01.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > `hue` parametresi renkleri, `style` parametresi ise işaret tiplerini belirler.
 
 ---
@@ -70,7 +70,7 @@ plt.title('Günlere Göre Toplam Hesap Dağılımı')
 ```
 ![](07-02.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > `palette` parametresiyle renk seti belirlenebilir (ör. `'Set1'`, `'coolwarm'`, `'viridis'`).
 
 ---
@@ -83,7 +83,7 @@ plt.title('Toplam Hesap Dağılımı')
 ```
 ![](07-03.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
 
 ---
