@@ -90,7 +90,7 @@ plt.title('Toplam Hesap Dağılımı')
 
 ## 📈 Çizgi Grafiği (Line Plot)
 
-Çizgi grafikleri zaman serileri veya sıralı/veri noktaları arasındaki trendleri göstermek için uygundur. Seaborn `lineplot` fonksiyonu, veri özetlerini otomatik olarak hesaplayıp (ör. ortalama) güven aralıklarını çizebilir; `estimator` ve `ci` parametreleriyle bu davranış kontrol edilebilir.
+Çizgi grafikleri zaman serileri veya sıralı/veri noktaları arasındaki trendleri göstermek için uygundur. Seaborn `lineplot` fonksiyonu, veri özetlerini otomatik olarak hesaplayıp (ör. ortalama) güven aralıklarını çizebilir.
 
 ```python
 # Günlere göre ortalama total_bill çizimi
@@ -108,7 +108,7 @@ plt.ylabel('Ortalama Toplam Hesap')
 ## 📊 Çubuk Grafiği (Bar Plot)
 
 ```python
-sns.barplot(data=df, x='day', y='tip', estimator='mean', ci=None, palette='muted')
+sns.barplot(data=df, x='day', y='tip', estimator='mean')
 plt.title('Günlere Göre Ortalama Bahşiş Miktarı')
 ```
 ![](07-04.png)
