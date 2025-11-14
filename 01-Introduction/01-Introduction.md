@@ -57,6 +57,7 @@ Veri görselleştirmede estetik kadar **algısal doğruluk** da önemlidir. Tasa
 * **Vurgu:** Ana mesajın öne çıkmasını sağlayın.
 * **Renk Kullanımı:** Az ve anlamlı renklerle bilgi iletin.
 
+> [!NOTE]
 > ⚠️ Örnek: Pasta grafikleri yerine çoğu durumda çubuk grafik kullanmak oran farklarını daha doğru gösterir.
 
 ---
@@ -96,7 +97,3 @@ Bu tür basit görselleştirmeler, bölümler arası farkları kolayca gösterme
 
 * [Python Matplotlib Dokümantasyonu](https://matplotlib.org/stable/users/index.html)
 * [Seaborn Galerisi](https://seaborn.pydata.org/examples/index.html)
-
----
-
-> Güncel sürüm: v1.0 — Kasım 2025
