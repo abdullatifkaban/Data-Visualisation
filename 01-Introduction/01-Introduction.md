@@ -29,7 +29,6 @@ plt.plot(years, values, marker='o')
 plt.title('Yıllara Göre Satış Miktarı')
 plt.xlabel('Yıl')
 plt.ylabel('Satış (bin adet)')
-plt.show()
 ```
 ![](01-01.png)  
 Bu örnek, yıllara göre satış trendini hızlıca anlamamızı sağlar.
@@ -85,7 +84,6 @@ values = [250, 180, 320, 150]
 plt.bar(departments, values, color=['#4e79a7', '#f28e2b', '#e15759', '#76b7b2'])
 plt.title('Departman Bazlı Yıllık Harcama')
 plt.ylabel('Bin TL')
-plt.show()
 ```
 ![](01-02.png)  
 Bu tür basit görselleştirmeler, bölümler arası farkları kolayca göstermeye yardımcı olur.

@@ -131,7 +131,6 @@ plt.title('Aylık Satış Verisi')
 plt.xlabel('Ay')
 plt.ylabel('Satış (bin adet)')
 plt.grid(True, linestyle='--', alpha=0.6)
-plt.show()
 ```
 ![](03-01.png)  
 Bu örnek, pandas DataFrame verisinin doğrudan matplotlib kullanılarak nasıl görselleştirileceğini gösterir.

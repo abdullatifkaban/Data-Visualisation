@@ -51,7 +51,6 @@ values = [25, 18, 32, 15]
 plt.bar(departments, values, color='#4e79a7')
 plt.title('Departman Bazlı Çalışan Sayısı')
 plt.ylabel('Kişi Sayısı')
-plt.show()
 ```
 ![](02-01.png)  
 Bu görselleştirme, farklı bölümler arasındaki personel dağılımını doğrudan karşılaştırmayı kolaylaştırır.
@@ -71,7 +70,6 @@ plt.title('Aylık Satış Trendleri')
 plt.xlabel('Ay')
 plt.ylabel('Satış (bin adet)')
 plt.grid(True, linestyle='--', alpha=0.5)
-plt.show()
 ```
 ![](02-02.png)  
 Zaman serisi grafiklerinde eğilimleri görmek, karar süreçlerinde önemli içgörüler sağlar.

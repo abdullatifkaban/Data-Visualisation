@@ -96,7 +96,6 @@ plt.hist(df['Satış'], bins=5, color='#4e79a7', edgecolor='white')
 plt.title('Satış Dağılımı')
 plt.xlabel('Satış')
 plt.ylabel('Frekans')
-plt.show()
 ```
 ![](04-01.png)
 
@@ -106,7 +105,6 @@ plt.show()
 plt.bar(df['Bölge'], df['Satış'], color='#f28e2b')
 plt.title('Bölgelere Göre Satış Değerleri')
 plt.ylabel('Satış (bin adet)')
-plt.show()
 ```
 ![](04-02.png)
 
@@ -144,7 +142,6 @@ df = pd.DataFrame(data)
 plt.figure(figsize=(8, 6))
 sns.heatmap(df.corr(numeric_only=True), annot=True, cmap='coolwarm')
 plt.title('Korelasyon Isı Haritası')
-plt.show()
 ```
 ![](04-03.png)
 

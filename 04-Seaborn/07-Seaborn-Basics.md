@@ -52,7 +52,6 @@ Bu veri seti, bir restoranın bahşiş (tip) verilerini içerir.
 ```python
 sns.scatterplot(data=df, x='total_bill', y='tip', hue='sex', style='time')
 plt.title('Toplam Hesap ve Bahşiş İlişkisi')
-plt.show()
 ```
 ![](07-01.png)
 
@@ -68,7 +67,6 @@ Kutu grafikleri, veri dağılımı, medyan, çeyrekler ve uç değerleri görsel
 ```python
 sns.boxplot(data=df, x='day', y='total_bill', palette='Set2')
 plt.title('Günlere Göre Toplam Hesap Dağılımı')
-plt.show()
 ```
 ![](07-02.png)
 
@@ -82,7 +80,6 @@ plt.show()
 ```python
 sns.histplot(data=df, x='total_bill', kde=True, color='#4e79a7')
 plt.title('Toplam Hesap Dağılımı')
-plt.show()
 ```
 ![](07-03.png)
 
@@ -101,7 +98,6 @@ sns.lineplot(data=df, x='day', y='total_bill', estimator='mean', ci=None, marker
 plt.title('Günlere Göre Ortalama Toplam Hesap')
 plt.xlabel('Gün')
 plt.ylabel('Ortalama Toplam Hesap')
-plt.show()
 ```
 ![](07-05.png)
 
@@ -115,7 +111,6 @@ plt.show()
 ```python
 sns.barplot(data=df, x='day', y='tip', estimator='mean', ci=None, palette='muted')
 plt.title('Günlere Göre Ortalama Bahşiş Miktarı')
-plt.show()
 ```
 ![](07-04.png)
 

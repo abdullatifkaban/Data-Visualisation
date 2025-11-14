@@ -39,7 +39,6 @@ plt.plot(aylar, satis)
 plt.title('Aylık Satış Grafiği')
 plt.xlabel('Ay')
 plt.ylabel('Satış (bin adet)')
-plt.show()
 ```
 ![](05-01.png)  
 
@@ -59,7 +58,6 @@ calisan_sayilari = [25, 18, 32, 15]
 plt.bar(departmanlar, calisan_sayilari, color='#4e79a7')
 plt.title('Departman Bazlı Çalışan Sayısı')
 plt.ylabel('Kişi Sayısı')
-plt.show()
 ```
 ![](05-02.png)  
 
@@ -80,7 +78,6 @@ plt.scatter(x, y, color='#e15759')
 plt.title('Dağılım Grafiği')
 plt.xlabel('Bağımsız Değişken')
 plt.ylabel('Bağımlı Değişken')
-plt.show()
 ```
 ![](05-03.png)  
 
@@ -116,7 +113,6 @@ plt.title('Özelleştirilmiş Çizgi Grafiği', fontsize=14)
 plt.xlabel('Ay', fontsize=12)
 plt.ylabel('Satış (bin adet)', fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.6)
-plt.show()
 ```
 ![](05-04.png)  
 
@@ -152,7 +148,6 @@ plt.bar(aylar, satis, color='orange')
 plt.title('Çubuk Grafik')
 
 plt.tight_layout()
-plt.show()
 ```
 ![](05-05.png)  
 
