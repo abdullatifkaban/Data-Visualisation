@@ -94,7 +94,7 @@ plt.title('Toplam Hesap Dağılımı')
 
 ```python
 # Günlere göre ortalama total_bill çizimi
-sns.lineplot(data=df, x='day', y='total_bill', estimator='mean', ci=None, marker='o', color='#2f6f9f')
+sns.lineplot(data=df, x='day', y='total_bill', marker='o', color='#2f6f9f')
 plt.title('Günlere Göre Ortalama Toplam Hesap')
 plt.xlabel('Gün')
 plt.ylabel('Ortalama Toplam Hesap')
@@ -102,8 +102,7 @@ plt.ylabel('Ortalama Toplam Hesap')
 ![](07-05.png)
 
 > [!TIP]
-> - `marker` parametresiyle nokta işaretleri ekleyin. `ci=None` ile hata payı bantlarını kaldırabilirsiniz.
-> - Zaman eksenini (örn. tarih/datetime) gerçek zaman serisi olarak çizmek isterseniz, eksen verinizi `pd.to_datetime()` ile dönüştürün ve `sns.lineplot` veya `plt.plot` kullanın.
+> - `marker` parametresiyle nokta işaretleri ekleyin.
 
 
 ## 📊 Çubuk Grafiği (Bar Plot)

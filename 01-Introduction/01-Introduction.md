@@ -94,7 +94,3 @@ Bu tür basit görselleştirmeler, bölümler arası farkları kolayca gösterme
 
 * [Python Matplotlib Dokümantasyonu](https://matplotlib.org/stable/users/index.html)
 * [Seaborn Galerisi](https://seaborn.pydata.org/examples/index.html)
-
----
-
-> Güncel sürüm: v1.0 — Kasım 2025

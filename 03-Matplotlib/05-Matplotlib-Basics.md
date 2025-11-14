@@ -101,7 +101,7 @@ plt.ylabel('Frekans')
 ![](05-06.png)  
 
 > [!TIP]
-> `bins` sayısı grafiğin ayrıntı düzeyini kontrol eder.
+> `bins=10` sayısı grafiğin ayrıntı düzeyini kontrol eder.
 
 ## 🎨 Grafik Özelleştirme
 
