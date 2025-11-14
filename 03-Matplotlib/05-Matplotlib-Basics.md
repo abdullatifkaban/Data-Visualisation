@@ -43,7 +43,7 @@ plt.show()
 ```
 ![](05-01.png)  
 
-> [!TIP]İpucu
+> [!TIP]
 > `marker='o'` parametresi ile veri noktalarına işaret ekleyebilirsiniz.
 
 ---
@@ -63,7 +63,7 @@ plt.show()
 ```
 ![](05-02.png)  
 
-> [!IMPORTANT]Önemli
+> [!IMPORTANT]
 > Dikey çubuk grafiği `plt.bar()`, yatay çubuk grafiği ise `plt.barh()` fonksiyonu ile oluşturulur.
 
 ---
