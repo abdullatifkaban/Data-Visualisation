@@ -84,8 +84,8 @@ plt.title('Toplam Hesap Dağılımı')
 ![](07-03.png)
 
 > [!TIP]
-> `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
-> `bins=10` sayısı grafiğin ayrıntı düzeyini kontrol eder.
+> - `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
+> - `bins=10` sayısı grafiğin ayrıntı düzeyini kontrol eder.
 
 ---
 
