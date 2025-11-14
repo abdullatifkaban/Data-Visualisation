@@ -55,7 +55,7 @@ plt.title('Toplam Hesap ve Bahşiş İlişkisi')
 ```
 ![](07-01.png)
 
-> [!TIP]
+> [!TIP]İpucu
 > `hue` parametresi renkleri, `style` parametresi ise işaret tiplerini belirler.
 
 ---
@@ -70,7 +70,7 @@ plt.title('Günlere Göre Toplam Hesap Dağılımı')
 ```
 ![](07-02.png)
 
-> [!TIP] 
+> [!TIP]İpucu
 > `palette` parametresiyle renk seti belirlenebilir (ör. `'Set1'`, `'coolwarm'`, `'viridis'`).
 
 ---
@@ -83,9 +83,8 @@ plt.title('Toplam Hesap Dağılımı')
 ```
 ![](07-03.png)
 
-> [!TIP]
-> `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.  
-> `bins` sayısı grafiğin ayrıntı düzeyini kontrol eder.
+> [!TIP]İpucu
+> `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
 
 ---
 
@@ -139,26 +138,6 @@ Diğer popüler temalar:
 
 ---
 
-<<<<<<< HEAD
-=======
-## 📈 Çoklu Grafik (FacetGrid)
-
-Birden fazla alt grafiği kategori bazında oluşturmak için `FacetGrid` kullanılabilir.
-
-```python
-g = sns.FacetGrid(df, col='sex', row='time')
-g.map_dataframe(sns.scatterplot, x='total_bill', y='tip')
-g.add_legend()
-plt.show()
-```
-![](07-05.png)
-
-> [!TIP]
-> Bu yöntem, alt gruplar arasındaki görsel karşılaştırmaları kolaylaştırır.
-
----
-
->>>>>>> 06040df579ae91c394a47625f52b9da8081c0d30
 ## ⚠️ Dikkat Edilmesi Gerekenler
 
 * Renk seçimi ve kontrastı görsel algıyı doğrudan etkiler.
