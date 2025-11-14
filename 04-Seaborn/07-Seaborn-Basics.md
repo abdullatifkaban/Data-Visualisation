@@ -56,7 +56,7 @@ plt.show()
 ```
 ![](07-01.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > `hue` parametresi renkleri, `style` parametresi ise işaret tiplerini belirler.
 
 ---
