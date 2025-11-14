@@ -80,7 +80,7 @@ Zaman serisi grafiklerinde eğilimleri görmek, karar süreçlerinde önemli iç
 
 - Yanlış grafik seçimi: Sürekli veriyi pasta grafikle göstermek
 - Eksensiz karşılaştırma: Eksen başlangıcını sıfırdan başlatmamak
-- Aşırı renk kullanımı: Görsel karmaşa yaratmak
+- Aşırı renk kullanımı: Görsel karmaşaya sebep olmak
 - 3B etkiler: Oran farklarını yanıltıcı hale getirmek
 
 ## 📚 Ek Kaynak
