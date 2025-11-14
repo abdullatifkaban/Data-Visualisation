@@ -72,7 +72,7 @@ plt.show()
 ```
 ![](07-02.png)
 
-> [!TIP]İpucu
+> [!TIP] İpucu  
 > `palette` parametresiyle renk seti belirlenebilir (ör. `'Set1'`, `'coolwarm'`, `'viridis'`).
 
 ---
