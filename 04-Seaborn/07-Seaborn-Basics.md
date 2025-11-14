@@ -91,6 +91,25 @@ plt.show()
 
 ---
 
+## 📈 Çizgi Grafiği (Line Plot)
+
+Çizgi grafikleri zaman serileri veya sıralı/veri noktaları arasındaki trendleri göstermek için uygundur. Seaborn `lineplot` fonksiyonu, veri özetlerini otomatik olarak hesaplayıp (ör. ortalama) güven aralıklarını çizebilir; `estimator` ve `ci` parametreleriyle bu davranış kontrol edilebilir.
+
+```python
+# Günlere göre ortalama total_bill çizimi
+sns.lineplot(data=df, x='day', y='total_bill', estimator='mean', ci=None, marker='o', color='#2f6f9f')
+plt.title('Günlere Göre Ortalama Toplam Hesap')
+plt.xlabel('Gün')
+plt.ylabel('Ortalama Toplam Hesap')
+plt.show()
+```
+![](07-05.png)
+
+> [!TIP]
+> - `marker` parametresiyle nokta işaretleri ekleyin. `ci=None` ile hata payı bantlarını kaldırabilirsiniz.
+> - Zaman eksenini (örn. tarih/datetime) gerçek zaman serisi olarak çizmek isterseniz, eksen verinizi `pd.to_datetime()` ile dönüştürün ve `sns.lineplot` veya `plt.plot` kullanın.
+
+
 ## 📊 Çubuk Grafiği (Bar Plot)
 
 ```python
@@ -100,7 +119,7 @@ plt.show()
 ```
 ![](07-04.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > Varsayılan olarak ortalama (`mean`) değerleri gösterir; `estimator` parametresi ile değiştirilebilir (ör. `median`).
 
 ---
@@ -119,25 +138,8 @@ Diğer popüler temalar:
 * `'white'`
 * `'ticks'`
 
-> [!TIP]İpucu
+> [!TIP]
 > Palet seçenekleri: `'pastel'`, `'muted'`, `'deep'`, `'coolwarm'`, `'rocket'`, `'mako'`.
-
----
-
-## 📈 Çoklu Grafik (FacetGrid)
-
-Birden fazla alt grafiği kategori bazında oluşturmak için `FacetGrid` kullanılabilir.
-
-```python
-g = sns.FacetGrid(df, col='sex', row='time')
-g.map_dataframe(sns.scatterplot, x='total_bill', y='tip')
-g.add_legend()
-plt.show()
-```
-![](07-05.png)
-
-> [!TIP]İpucu
-> Bu yöntem, alt gruplar arasındaki görsel karşılaştırmaları kolaylaştırır.
 
 ---
 

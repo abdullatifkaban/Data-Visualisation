@@ -43,7 +43,7 @@ plt.show()
 ```
 ![](05-01.png)  
 
-> [!TIP]İpucu
+> [!TIP]
 > `marker='o'` parametresi ile veri noktalarına işaret ekleyebilirsiniz.
 
 ---
@@ -63,7 +63,7 @@ plt.show()
 ```
 ![](05-02.png)  
 
-> [!IMPORTANT]Önemli
+> [!IMPORTANT]
 > Dikey çubuk grafiği `plt.bar()`, yatay çubuk grafiği ise `plt.barh()` fonksiyonu ile oluşturulur.
 
 ---
@@ -84,7 +84,27 @@ plt.show()
 ```
 ![](05-03.png)  
 
----
+
+## 📉 Histogram
+
+Histogramlar, tek bir değişkenin değer dağılımını ve frekanslarını görselleştirmek için kullanılır. Sürekli verilerin yoğunluğunu görmek, çarpıklık (skew) ve çok modluluk (multimodality) gibi özellikleri hızlıca tespit etmek için idealdir. 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Örnek veri: normal dağılıma sahip rastgele veriler
+data = np.random.normal(loc=0, scale=1, size=1000)
+
+plt.hist(data, bins=10)
+plt.title('Örnek Veri - Histogram')
+plt.xlabel('Değer')
+plt.ylabel('Frekans')
+```
+![](05-06.png)  
+
+> [!TIP]
+> `bins` sayısı grafiğin ayrıntı düzeyini kontrol eder.
 
 ## 🎨 Grafik Özelleştirme
 
@@ -113,6 +133,13 @@ plt.show()
 
 Birden fazla grafiği aynı figür üzerinde göstermek için `plt.subplot()` fonksiyonu kullanılabilir.
 
+`plt.subplot(nrows, ncols, index)`: Bu fonksiyon, grafiğin yerleştirileceği bir alt alan (subplot) oluşturur. `nrows` ve `ncols` parametreleri, toplamda kaç satır ve sütun olacağını belirtirken, `index` ise hangi alt alanın kullanılacağını belirtir.
+
+**Parametreler**:
+- `nrows` (3): Toplam 3 satır olduğunu belirtir.
+- `ncols` (2): Toplam 2 sütun olduğunu belirtir.
+- `index` (5): Toplam 6 alt alandan 5. alt alanı seçer.
+
 ```python
 plt.figure(figsize=(10, 4))
 
@@ -128,6 +155,14 @@ plt.tight_layout()
 plt.show()
 ```
 ![](05-05.png)  
+
+> [!NOTE]
+> `figsize=(10, 4)`: Bu parametre, figürün boyutlarını inç (inches) cinsinden belirler.
+> - **10**: Figürün genişliği (x ekseninin uzunluğu) 10 inç.
+> - **4**: Figürün yüksekliği (y ekseninin uzunluğu) 4 inç.
+> 
+> `plt.tight_layout()`: Bu komut, alt alanların (subplots) düzenini otomatik olarak ayarlamak için kullanılır. Grafiklerdeki elemanların (başlıklar, etiketler, vb.) daha iyi görünmesi için boşlukları optimize eder.
+> - **Kullanımı**: Genellikle çok sayıda alt alan veya etiket bulunduran grafiklerde, elemanlar birbirine girebilir. `tight_layout()`, bu durumda grafiğin daha düzgün görünmesini sağlar. Özellikle alt alanların arasındaki boşlukları ve dış kenar boşluklarını ayarlamak için etkilidir.
 
 ---
 
