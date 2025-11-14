@@ -72,7 +72,7 @@ plt.show()
 ```
 ![](07-02.png)
 
-> [!TIP] İpucu  
+> [!TIP] 
 > `palette` parametresiyle renk seti belirlenebilir (ör. `'Set1'`, `'coolwarm'`, `'viridis'`).
 
 ---
@@ -86,7 +86,7 @@ plt.show()
 ```
 ![](07-03.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > `kde=True` seçeneği, histogram üzerine bir yoğunluk eğrisi ekler.
 
 ---
@@ -100,7 +100,7 @@ plt.show()
 ```
 ![](07-04.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > Varsayılan olarak ortalama (`mean`) değerleri gösterir; `estimator` parametresi ile değiştirilebilir (ör. `median`).
 
 ---
@@ -119,7 +119,7 @@ Diğer popüler temalar:
 * `'white'`
 * `'ticks'`
 
-> [!TIP]İpucu
+> [!TIP]
 > Palet seçenekleri: `'pastel'`, `'muted'`, `'deep'`, `'coolwarm'`, `'rocket'`, `'mako'`.
 
 ---
@@ -136,7 +136,7 @@ plt.show()
 ```
 ![](07-05.png)
 
-> [!TIP]İpucu
+> [!TIP]
 > Bu yöntem, alt gruplar arasındaki görsel karşılaştırmaları kolaylaştırır.
 
 ---
