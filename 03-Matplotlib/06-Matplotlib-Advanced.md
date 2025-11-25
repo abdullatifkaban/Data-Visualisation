@@ -34,8 +34,8 @@ axs[1].bar(aylar, satis_2024, color='orange')
 axs[1].set_title('2024 Satışları')
 
 plt.tight_layout()
-plt.show()
 ```
+![](06-01.png)
 
 > 💡 `figsize` parametresi ile grafik boyutlarını, `tight_layout()` ile boşluk ayarlarını düzenleyebilirsiniz.
 
@@ -58,30 +58,10 @@ plt.annotate(f'Maks: {max_value}', xy=(aylar[max_index], max_value),
              xytext=(aylar[max_index], max_value+10),
              arrowprops=dict(facecolor='black', shrink=0.05))
 
-plt.show()
 ```
+![](06-02.png)
 
 > Bu yöntem, veri içindeki önemli noktaları sunumlarda vurgulamak için idealdir.
-
----
-
-## 🎨 Stil ve Tema Kullanımı
-
-Matplotlib, önceden tanımlanmış birçok stil (tema) sunar. Stil değiştirmek için:
-
-```python
-plt.style.use('seaborn-v0_8-darkgrid')  # Mevcut stillerden birini seçin
-```
-
-Kullanılabilecek bazı stiller:
-
-* `'ggplot'`
-* `'seaborn-v0_8-darkgrid'`
-* `'bmh'`
-* `'classic'`
-* `'Solarize_Light2'`
-
-> Mevcut tüm stilleri görmek için: `plt.style.available`
 
 ---
 
@@ -98,8 +78,8 @@ plt.ylabel('Satış (bin adet)')
 plt.xlim(-0.5, 4.5)
 plt.ylim(100, 250)
 plt.grid(True, linestyle='--', alpha=0.6)
-plt.show()
 ```
+![](06-03.png)
 
 ---
 
@@ -113,8 +93,8 @@ colors = ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f']
 
 plt.bar(aylar, satis_2024, color=colors)
 plt.title('Renk Paleti Örneği')
-plt.show()
 ```
+![](06-04.png)
 
 ---
 
@@ -129,10 +109,37 @@ plt.title('Yıllık Satış Karşılaştırması')
 plt.xlabel('Ay')
 plt.ylabel('Satış (bin adet)')
 plt.legend()
-plt.show()
 ```
+![](06-05.png)
 
 > `legend()` fonksiyonu, serileri etiketleyerek karşılaştırmayı kolaylaştırır.
+
+---
+
+## 🎨 Stil ve Tema Kullanımı
+
+Matplotlib, önceden tanımlanmış birçok stil (tema) sunar. Stil değiştirmek için:
+
+```python
+plt.style.use('seaborn-v0_8-darkgrid')  # Mevcut stillerden birini seçin
+```
+`seaborn-v0_8-darkgrid` stili uygulandıktan sonra grafiğin görünümü aşağıdaki gibi olacaktır:
+
+![](06-06.png)
+
+Kullanılabilecek bazı stiller:
+
+* `'ggplot'`
+* `'seaborn-v0_8-darkgrid'`
+* `'bmh'`
+* `'classic'`
+* `'Solarize_Light2'`
+
+> Mevcut tüm stilleri görmek için aşağıdaki komutu kullanabilirsiniz: 
+
+```python
+plt.style.available
+```
 
 ---
 
@@ -148,4 +155,4 @@ plt.show()
 
 * [Matplotlib Subplots Kılavuzu](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html)
 * [Stil Seçenekleri](https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html)
-* [Annotation Örnekleri](https://matplotlib.org/stable/gallery/annotations/annotation_basic.html)
+* [Annotation Örnekleri](https://matplotlib.org/stable/gallery/#text-labels-and-annotations)

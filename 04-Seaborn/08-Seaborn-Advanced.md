@@ -27,10 +27,11 @@ df = sns.load_dataset('tips')
 corr = df.corr(numeric_only=True)
 sns.heatmap(corr, annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Korelasyon Isı Haritası')
-plt.show()
 ```
+![](08-01.png)
 
-> 💡 `annot=True` parametresiyle hücrelere korelasyon katsayıları eklenir.
+> [!TIP]
+> `annot=True` parametresiyle hücrelere korelasyon katsayıları eklenir.
 
 ---
 
@@ -41,11 +42,12 @@ Pairplot, veri setindeki tüm sayısal değişkenlerin birbirleriyle ilişkileri
 ```python
 sns.pairplot(df, hue='sex', diag_kind='kde', palette='husl')
 plt.suptitle('Çoklu Değişken İlişki Grafikleri', y=1.02)
-plt.show()
 ```
+![](08-02.png)
 
-> `hue` parametresi, kategorik bir değişkene göre renk ayrımı sağlar.
-> `diag_kind='kde'` seçeneği, diyagonal kısımda yoğunluk eğrileri gösterir.
+>[!NOTE]
+> - `hue` parametresi, kategorik bir değişkene göre renk ayrımı sağlar.  
+> - `diag_kind='kde'` seçeneği, diyagonal kısımda yoğunluk eğrileri gösterir.
 
 ---
 
@@ -55,9 +57,10 @@ Jointplot, iki değişkenin hem dağılımını hem de ilişkisini tek bir grafi
 
 ```python
 sns.jointplot(data=df, x='total_bill', y='tip', kind='reg', color='#4e79a7')
-plt.show()
 ```
+![](08-03.png)
 
+>[!NOTE]
 > `kind` parametresi: `'scatter'`, `'hex'`, `'reg'`, `'kde'` gibi türleri destekler.
 
 ---
@@ -69,9 +72,10 @@ Catplot, farklı kategoriler arasındaki farkları çok boyutlu şekilde göster
 ```python
 sns.catplot(data=df, x='day', y='total_bill', hue='sex', kind='violin', palette='muted')
 plt.suptitle('Günlere ve Cinsiyete Göre Hesap Dağılımı')
-plt.show()
 ```
+![](08-04.png)
 
+>[!NOTE]
 > `kind` parametresi `'strip'`, `'swarm'`, `'box'`, `'violin'`, `'bar'` gibi birçok grafik türünü destekler.
 
 ---
@@ -85,39 +89,27 @@ sns.set_palette('coolwarm')
 
 sns.boxplot(data=df, x='day', y='tip')
 plt.title('Coolwarm Paletiyle Kutu Grafiği')
-plt.show()
 ```
+![](08-05.png)
 
-> Alternatif paletler: `'viridis'`, `'crest'`, `'flare'`, `'mako'`, `'icefire'`, `'rocket'`.
+>[!NOTE]
+> **Alternatif paletler**: `'viridis'`, `'crest'`, `'flare'`, `'mako'`, `'icefire'`, `'rocket'`.
 
 ---
 
 ## 🧭 FacetGrid ile Çoklu Görselleştirme
 
+Birden fazla alt grafiği kategori bazında oluşturmak için `FacetGrid` kullanılabilir.
+
 ```python
 g = sns.FacetGrid(df, col='sex', row='smoker', margin_titles=True)
 g.map_dataframe(sns.scatterplot, x='total_bill', y='tip', color='#59a14f')
 g.add_legend()
-plt.show()
 ```
+![](08-06.png)
 
+> [!TIP]
 > Bu yöntem, alt gruplar bazında veri ilişkilerini karşılaştırmak için oldukça etkilidir.
-
----
-
-## 📈 Çoklu Grafik (FacetGrid)
-
-Birden fazla alt grafiği kategori bazında oluşturmak için `FacetGrid` kullanılabilir.
-
-```python
-g = sns.FacetGrid(df, col='sex', row='time')
-g.map_dataframe(sns.scatterplot, x='total_bill', y='tip')
-g.add_legend()
-plt.show()
-```
-
-> [!TIP]İpucu
-> Bu yöntem, alt gruplar arasındaki görsel karşılaştırmaları kolaylaştırır.
 
 ---
 
@@ -133,4 +125,3 @@ plt.show()
 
 * [Seaborn Relational Plots](https://seaborn.pydata.org/tutorial/relational.html)
 * [Seaborn Categorical Plots](https://seaborn.pydata.org/tutorial/categorical.html)
-* [Seaborn Matrix Plots](https://seaborn.pydata.org/tutorial/heatmap.html)
