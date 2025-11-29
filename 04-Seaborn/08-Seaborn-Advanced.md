@@ -8,30 +8,8 @@ Bu araçlar, veri ilişkilerini daha derinlemesine anlamamıza ve sunumlarda etk
 ## 🎯 Öğrenme Hedefleri
 
 * Çok değişkenli grafikler (pairplot, catplot, jointplot) oluşturmak
-* Isı haritaları (heatmap) ile korelasyonları görselleştirmek
 * Gelişmiş renk paletleri ve düzenlemeler kullanmak
 * Grafik yorumlarını istatistiksel olarak güçlendirmek
-
----
-
-## 📊 Korelasyon Isı Haritası (Heatmap)
-
-Isı haritaları, değişkenler arasındaki korelasyonları görsel olarak temsil eder. Renk tonları ilişkilerin gücünü ifade eder.
-
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-df = sns.load_dataset('tips')
-
-corr = df.corr(numeric_only=True)
-sns.heatmap(corr, annot=True, cmap='coolwarm', linewidths=0.5)
-plt.title('Korelasyon Isı Haritası')
-```
-![](08-01.png)
-
-> [!TIP]
-> `annot=True` parametresiyle hücrelere korelasyon katsayıları eklenir.
 
 ---
 
