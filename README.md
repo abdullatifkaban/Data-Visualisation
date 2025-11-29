@@ -34,6 +34,10 @@ Bu repo, **veri görselleştirme** konusunu öğrenmek isteyenlere yönelik haz�
 - [08 — Seaborn İleri Seviye](04-Seaborn/08-Seaborn-Advanced.md)  
 (_Heatmap, pairplot, jointplot, catplot, facetgrid_)
 
+### İleri Teknikler
+- [09 — Zaman Serileri Görselleştirme](05-Advanced-Visualization/09-Time-Series-Visualization.md)  
+(_Tarihe dayalı verilerin göstedimi, FuncAnimation, Bar Chart Race_)
+
 ---
 
 ## 🔗 İlgili Araçlar & Veri Setleri
