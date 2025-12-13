@@ -37,6 +37,8 @@ Bu repo, **veri görselleştirme** konusunu öğrenmek isteyenlere yönelik haz�
 ### İleri Teknikler
 - [09 — Zaman Serileri Görselleştirme](05-Advanced-Visualization/09-Time-Series-Visualization.md)  
 (_Tarihe dayalı verilerin göstedimi, FuncAnimation, Bar Chart Race_)
+- [10 — 3 Boyutlu Grafikler](05-Advanced-Visualization/10-3D-Visualization.md)  
+(_3B Scatter, 3B Matplotlip ve 3B Plotly grafikleri_)
 
 ---
 

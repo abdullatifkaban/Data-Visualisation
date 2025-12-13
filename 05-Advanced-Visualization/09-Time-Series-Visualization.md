@@ -233,6 +233,20 @@ bcr.bar_chart_race(df=data, filename='bar_chart_race.html', orientation='h', sor
 > [!Tip]
 > `bar_chart_race` çıktısı HTML/MP4 olarak kaydedilebilir; Jupyter içinde doğrudan gösterilebilir.
 
+### Covid-19 Verileriyle Yarışan Grafik
+
+```python
+import pandas as pd
+import bar_chart_race as bcr
+
+df=pd.read_csv("05-Advanced-Visualization/corona_dat.csv")
+df2=df[['date','China','Italy','Brazil','Spain','US','Turkey']]
+df2.set_index("date", inplace=True)
+toplam=df2.cumsum(axis=0)
+
+bcr.bar_chart_race(toplam,filename='covid19.mp4',figsize=(10,8),title='Covid19')
+```
+<video src="covid19.mp4"></video>
 ---
 
 ## ⚠️ Dikkat Edilmesi Gerekenler
