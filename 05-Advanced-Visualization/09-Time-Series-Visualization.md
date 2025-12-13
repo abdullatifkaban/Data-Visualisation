@@ -246,6 +246,8 @@ toplam=df2.cumsum(axis=0)
 
 bcr.bar_chart_race(toplam,filename='covid19.mp4',figsize=(10,8),title='Covid19')
 ```
+![](covid19.mp4)
+
 <video src="covid19.mp4"></video>
 ---
 
