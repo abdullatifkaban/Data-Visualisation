@@ -1,2 +1,5 @@
-_AI_PROJECT_CONTEXT.md
-a.ipynb
+# CP_Data-Visualisation.md: kurs tasarım belleği. Repoya commit edilmez;
+# yedeklemesi öğretim üyesi tarafından deponun dışında yapılır.
+CP_Data-Visualisation.md
+.ipynb_checkpoints/
+.gitignore
