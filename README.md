@@ -58,6 +58,14 @@ Bu kurs, elinizdeki ham veriyi anlamlı ve etkili grafiklere dönüştürme bece
 - [Mini Proje](Topics/16-Mini-Project.ipynb)  
 *(Gerçek bir veri setiyle sorudan sunuma uzanan bitirici çalışma)*
 
+## 🧰 Yardımcı Araç: Grafik Atölyesi
+
+Derslerde öğrendiklerini kendi verinle denemek için ayrı bir depoda küçük bir
+Streamlit uygulaması var: **[Grafik Atölyesi](https://github.com/abdullatifkaban/Chart-Builder)**.
+CSV ya da Excel dosyanı yüklediğinde sütunları tanır, çizilebilecek grafikleri
+listeler ve aynı grafiği pandas, matplotlib ve seaborn ile ayrı ayrı çizip
+**Python kodunu** gösterir.
+
 ## 💻 Gereksinimler
 
 - Anaconda (Python 3 ile) — kurulumu 3. derste adım adım anlatılır
